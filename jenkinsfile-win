@@ -8,7 +8,7 @@ pipeline {
             steps {
                 bat '''
                     if exist hub-de-leitura-integrado2 rmdir /s /q hub-de-leitura-integrado2
-                    git clone https://github.com/EBAC-QE/hub-de-leitura-integrado2.git
+                    git clone --depth 1 https://github.com/EBAC-QE/hub-de-leitura-integrado2.git
                 '''
             }
         }
@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat '''
                     if exist hub-de-leitura-teste-ui2 rmdir /s /q hub-de-leitura-teste-ui2
-                    git clone https://github.com/EBAC-QE/hub-de-leitura-teste-ui2.git
+                    git clone --depth 1 https://github.com/EBAC-QE/hub-de-leitura-teste-ui2.git
                 '''
             }
         }
