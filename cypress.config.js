@@ -1,5 +1,6 @@
 const { defineConfig } = require("cypress");
-const { allureCypress } = require ("allure-cypress/reporter");
+const { allureCypress } = require("allure-cypress/reporter");
+//import { allureCypress } from "allure-cypress/reporter";
 
 module.exports = defineConfig({
   e2e: {
@@ -10,7 +11,7 @@ module.exports = defineConfig({
       return config;
     },
     baseUrl: "http://localhost:3000/",
-    projectId: "5rckft", 
+    projectId: "5rckft",
     video: true
   },
 });
